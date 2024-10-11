@@ -1,12 +1,13 @@
-
 # Visita-Faena-App
 Esta aplicación desarrollada en Power Apps permite centralizar y gestionar las solicitudes de visitas a faenas, eliminando la necesidad de correos electrónicos o intermediarios. Los usuarios pueden crear solicitudes a través de un formulario, adjuntar los documentos necesarios y monitorear el estado de su solicitud. Los administradores pueden revisar, aprobar o rechazar las solicitudes en un flujo de tres fases: preaprobación, aprobación por la empresa y aprobación de la faena. Power Automate se utiliza para enviar notificaciones por correo electrónico en cada etapa del proceso, utilizando listas de SharePoint como base de datos.
 
+![Diagrama de bloques](images/dbloques.png)
+
 ## **Tecnologías Utilizadas**
 
-![Power Apps](images/powerapps.png) **Power Apps**: Desarrollo de la interfaz de usuario y lógica de la aplicación.
-![Power Apps](images/powerautomate.png) **Power Automate**: Automatización del flujo de notificaciones por correo electrónico en cada fase del proceso.
-![Power Apps](images/splists.png) **SharePoint Lists**: Simulación de bases de datos para gestionar usuarios, requisitos de faenas, solicitudes, y documentos adjuntos.
+- <img src="images/powerapps.png" alt="Power Apps" width="25"/> **Power Apps**: Desarrollo de la interfaz de usuario y lógica de la aplicación.
+- <img src="images/powerautomate.png" alt="Power Automate" width="25"/>  **Power Automate**: Automatización del flujo de notificaciones por correo electrónico en cada fase del proceso.
+- <img src="images/splists.png" alt="Listas de sharepoint" width="25"/> **SharePoint Lists**: Simulación de bases de datos para gestionar usuarios, requisitos de faenas, solicitudes, y documentos adjuntos.
 
 ## **Demostración**
 
@@ -26,30 +27,9 @@ Pantalla mostrada al iniciar la aplicación. La tercera opción solo será visib
 
 ![Pantalla de Inicio](images/Pantalla%20inicio.png)
 
-### **Pantalla de Administración de Solicitudes**
-
-Esta pantalla está destinada al administrador, quien puede ver el estado de todas las solicitudes pendientes, revisar los documentos adjuntos y gestionar el proceso de aprobación o rechazo.
-
-![Pantalla de Administración de solicitudes](images/Pantalla%20Administración%20Solicitudes.png)
-
-### **Pantalla de Detalle de Solicitud (Usuario)**
-
-Aquí, el usuario puede ver el estado y los detalles completos de su solicitud, incluidos los documentos adjuntos y las fechas propuestas para la visita.
-
-![Pantalla de Administración de solicitudes](images/Pantalla%20Detalle%20Solicitud%20USUARIO1.png)
-![Pantalla de Administración de solicitudes](images/Pantalla%20Detalle%20Solicitud%20USUARIO2.png)
-
-
-### **Pantalla de Detalle de Solicitud (Administrador)**
-
-Esta es similar a la pantalla de detalle de solicitud del usuario, pero incluye un panel de control adicional para que el administrador pueda aprobar o rechazar cada fase del proceso.
-
-![Pantalla de Administración de solicitudes](images/Pantalla%20Detalle%20Solicitud%20ADMIN1.png)
-![Pantalla de Administración de solicitudes](images/Pantalla%20Detalle%20Solicitud%20ADMIN2.png)
-
 ### **Pantalla de Formulario de Solicitud**
 
-El formulario donde los usuarios completan todos los datos necesarios para crear una nueva solicitud de visita a faenas. Aquí se puede adjuntar la documentación requerida y especificar las fechas de la visita.
+El formulario donde los usuarios completan todos los datos necesarios para crear una nueva solicitud de visita a faenas. Aquí se puede adjuntar la documentación requerida y especificar alguna otra información requerida.
 
 ![Pantalla de Administración de solicitudes](images/Pantalla%20Formulario%20Solicitud.png)
 
@@ -59,9 +39,30 @@ Los usuarios pueden visualizar una lista de sus solicitudes pendientes y complet
 
 ![Pantalla de Administración de solicitudes](images/Pantalla%20Solicitudes%20Usuario.png)
 
+### **Pantalla de Detalle de Solicitud **
+
+Aquí, el usuario puede ver el estado y los detalles completos de su solicitud, incluidos los documentos adjuntos y las fechas propuestas para la visita.
+
+![Pantalla de Administración de solicitudes](images/Pantalla-Detalle-Solicitud-USUARIO1.png)
+![Pantalla de Administración de solicitudes](images/Pantalla-Detalle-Solicitud-USUARIO2.png)
 
 
-### Estructura de las listas de SharePoint:
+### **Pantalla de Administración de Solicitudes (Administrador)**
+
+Esta pantalla está destinada al administrador, quien puede ver el estado de todas las solicitudes pendientes.
+
+![Pantalla de Administración de solicitudes](images/Pantalla%20Administración%20Solicitudes.png)
+
+
+### **Pantalla de Detalle de Solicitud (Administrador)**
+
+Esta es similar a la pantalla de detalle de solicitud del usuario, pero incluye un panel de control adicional para que el administrador pueda aprobar o rechazar cada fase del proceso.
+
+![Pantalla de Administración de solicitudes](images/Pantalla-Detalle-Solicitud-ADMIN2.png)
+![Pantalla de Administración de solicitudes](images/Pantalla-Detalle-Solicitud-ADMIN2.png)
+
+
+## Estructura de las listas de SharePoint:
 
 ![Pantalla de Administración de solicitudes](images/ERD.png)
 
